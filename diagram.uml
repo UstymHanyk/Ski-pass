@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>H:/ucu/java projects/Ski-pass-main/src/main/java</OriginalElement>
+  <nodes>
+    <node x="145.37500000000006" y="556.0">skiPasses.DaysSkiPass</node>
+    <node x="396.37500000000006" y="567.5">skiPasses.LiftsSkiPass</node>
+    <node x="744.8514344262296" y="723.0">skiPasses.PassSystem</node>
+    <node x="641.375" y="545.0">skiPasses.SeasonSkiPass</node>
+    <node x="112.83299180327867" y="229.0">passProperties.DaysNum</node>
+    <node x="912.8514344262296" y="229.5">passProperties.Seasons</node>
+    <node x="749.5" y="0.0">passProperties.DayTypes</node>
+    <node x="1159.75" y="22.0">idGenerator.idGenerator</node>
+    <node x="567.8514344262296" y="218.0">passProperties.LiftsNum</node>
+    <node x="1288.6014344262296" y="955.0">turnstile.Turnstile</node>
+    <node x="701.3329918032787" y="1109.0">Main</node>
+    <node x="1107.8514344262296" y="218.5">skiPasses.SkiPass</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="turnstile.Turnstile" target="skiPasses.PassSystem" relationship="TO_ONE">
+      <point x="50.75" y="-51.0" />
+      <point x="1440.8514344262296" y="913.0" />
+      <point x="981.1014344262296" y="913.0" />
+      <point x="78.75" y="84.0" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="skiPasses.SeasonSkiPass" relationship="CREATE">
+      <point x="-78.75" y="-84.0" />
+      <point x="823.6014344262296" y="701.0" />
+      <point x="586.1219262295083" y="701.0" />
+      <point x="586.1219262295083" y="691.0" />
+      <point x="737.875" y="691.0" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="Main" target="skiPasses.LiftsSkiPass" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="380.62500000000006" y="1078.0" />
+      <point x="380.62500000000006" y="701.0" />
+      <point x="452.62500000000006" y="701.0" />
+      <point x="-56.25" y="39.5" />
+    </edge>
+    <edge source="skiPasses.SkiPass" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="-64.0" y="-106.0" />
+      <point x="1171.8514344262296" y="197.0" />
+      <point x="1225.25" y="197.0" />
+      <point x="1225.25" y="177.0" />
+      <point x="795.25" y="177.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="skiPasses.SkiPass" target="idGenerator.idGenerator" relationship="DEPENDENCY">
+      <point x="-64.0" y="-106.0" />
+      <point x="1171.8514344262296" y="197.0" />
+      <point x="1225.25" y="197.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="skiPasses.DaysSkiPass" relationship="CREATE">
+      <point x="-78.75" y="-84.0" />
+      <point x="823.6014344262296" y="701.0" />
+      <point x="586.1219262295083" y="701.0" />
+      <point x="586.1219262295083" y="691.0" />
+      <point x="318.62500000000006" y="691.0" />
+      <point x="57.75" y="51.0" />
+    </edge>
+    <edge source="skiPasses.DaysSkiPass" target="skiPasses.SkiPass" relationship="GENERALIZATION">
+      <point x="57.75" y="-51.0" />
+      <point x="318.62500000000006" y="473.0" />
+      <point x="771.5" y="473.0" />
+      <point x="771.5" y="463.0" />
+      <point x="1171.8514344262296" y="463.0" />
+      <point x="-64.0" y="106.0" />
+    </edge>
+    <edge source="skiPasses.SeasonSkiPass" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="64.33333333333326" y="-62.0" />
+      <point x="802.2083333333333" y="493.0" />
+      <point x="988.2264344262296" y="493.0" />
+      <point x="988.2264344262296" y="473.0" />
+      <point x="878.3545081967213" y="473.0" />
+      <point x="878.3545081967213" y="187.0" />
+      <point x="795.25" y="187.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="Main" target="passProperties.LiftsNum" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="134.875" y="1078.0" />
+      <point x="134.875" y="503.0" />
+      <point x="658.8514344262296" y="503.0" />
+      <point x="0.0" y="106.5" />
+    </edge>
+    <edge source="skiPasses.SeasonSkiPass" target="passProperties.Seasons" relationship="TO_ONE">
+      <point x="0.0" y="-62.0" />
+      <point x="737.875" y="483.0" />
+      <point x="956.6014344262296" y="483.0" />
+      <point x="-43.75" y="95.0" />
+    </edge>
+    <edge source="skiPasses.LiftsSkiPass" target="skiPasses.SkiPass" relationship="GENERALIZATION">
+      <point x="56.24999999999994" y="-39.5" />
+      <point x="565.125" y="473.0" />
+      <point x="771.5" y="473.0" />
+      <point x="771.5" y="463.0" />
+      <point x="1171.8514344262296" y="463.0" />
+      <point x="-64.0" y="106.0" />
+    </edge>
+    <edge source="skiPasses.SeasonSkiPass" target="passProperties.Seasons" relationship="DEPENDENCY">
+      <point x="64.33333333333326" y="-62.0" />
+      <point x="802.2083333333333" y="493.0" />
+      <point x="988.2264344262296" y="493.0" />
+      <point x="988.2264344262296" y="483.0" />
+      <point x="1038.7469262295083" y="483.0" />
+      <point x="1038.7469262295083" y="453.0" />
+      <point x="1044.1014344262296" y="453.0" />
+      <point x="43.75" y="95.0" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="skiPasses.LiftsSkiPass" relationship="CREATE">
+      <point x="-78.75" y="-84.0" />
+      <point x="823.6014344262296" y="701.0" />
+      <point x="586.1219262295083" y="701.0" />
+      <point x="586.1219262295083" y="691.0" />
+      <point x="565.125" y="691.0" />
+      <point x="56.24999999999994" y="39.5" />
+    </edge>
+    <edge source="turnstile.Turnstile" target="skiPasses.SkiPass" relationship="DEPENDENCY">
+      <point x="-50.75" y="-51.0" />
+      <point x="1339.3514344262296" y="933.0" />
+      <point x="1400.2295081967213" y="933.0" />
+      <point x="1400.2295081967213" y="513.0" />
+      <point x="1299.8514344262296" y="513.0" />
+      <point x="64.0" y="106.0" />
+    </edge>
+    <edge source="Main" target="passProperties.DaysNum" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="119.5" y="1078.0" />
+      <point x="119.5" y="513.0" />
+      <point x="205.33299180327873" y="513.0" />
+      <point x="0.0" y="95.5" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="skiPasses.SkiPass" relationship="DEPENDENCY">
+      <point x="78.75" y="-84.0" />
+      <point x="981.1014344262296" y="701.0" />
+      <point x="1064.3514344262296" y="701.0" />
+      <point x="1064.3514344262296" y="691.0" />
+      <point x="1384.8514344262296" y="691.0" />
+      <point x="1384.8514344262296" y="523.0" />
+      <point x="1400.2295081967213" y="523.0" />
+      <point x="1400.2295081967213" y="513.0" />
+      <point x="1299.8514344262296" y="513.0" />
+      <point x="64.0" y="106.0" />
+    </edge>
+    <edge source="skiPasses.LiftsSkiPass" target="passProperties.LiftsNum" relationship="DEPENDENCY">
+      <point x="-56.25" y="-39.5" />
+      <point x="452.62500000000006" y="523.0" />
+      <point x="613.3514344262296" y="523.0" />
+      <point x="613.3514344262296" y="463.0" />
+      <point x="658.8514344262296" y="463.0" />
+      <point x="0.0" y="106.5" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="78.75" y="-84.0" />
+      <point x="981.1014344262296" y="701.0" />
+      <point x="1064.3514344262296" y="701.0" />
+      <point x="1064.3514344262296" y="691.0" />
+      <point x="1374.3514344262296" y="691.0" />
+      <point x="1374.3514344262296" y="187.0" />
+      <point x="795.25" y="187.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="Main" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="6.0" y="1078.0" />
+      <point x="6.0" y="187.0" />
+      <point x="795.25" y="187.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="skiPasses.SkiPass" target="passProperties.DayTypes" relationship="TO_ONE">
+      <point x="64.0" y="-106.0" />
+      <point x="1299.8514344262296" y="167.0" />
+      <point x="886.75" y="167.0" />
+      <point x="45.75" y="73.0" />
+    </edge>
+    <edge source="Main" target="turnstile.Turnstile" relationship="CREATE">
+      <point x="37.25" y="-39.5" />
+      <point x="813.0829918032787" y="1088.0" />
+      <point x="1390.1014344262296" y="1088.0" />
+      <point x="0.0" y="51.0" />
+    </edge>
+    <edge source="skiPasses.DaysSkiPass" target="passProperties.DaysNum" relationship="DEPENDENCY">
+      <point x="-57.75" y="-51.0" />
+      <point x="203.12500000000006" y="523.0" />
+      <point x="16.5" y="523.0" />
+      <point x="16.5" y="493.0" />
+      <point x="205.33299180327873" y="493.0" />
+      <point x="0.0" y="95.5" />
+    </edge>
+    <edge source="skiPasses.DaysSkiPass" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="-57.75" y="-51.0" />
+      <point x="203.12500000000006" y="523.0" />
+      <point x="16.5" y="523.0" />
+      <point x="16.5" y="187.0" />
+      <point x="795.25" y="187.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="skiPasses.SeasonSkiPass" target="skiPasses.SkiPass" relationship="GENERALIZATION">
+      <point x="-64.33333333333326" y="-62.0" />
+      <point x="673.5416666666667" y="473.0" />
+      <point x="771.5" y="473.0" />
+      <point x="771.5" y="463.0" />
+      <point x="1171.8514344262296" y="463.0" />
+      <point x="-64.0" y="106.0" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="passProperties.DaysNum" relationship="DEPENDENCY">
+      <point x="78.75" y="-84.0" />
+      <point x="981.1014344262296" y="701.0" />
+      <point x="1064.3514344262296" y="701.0" />
+      <point x="1064.3514344262296" y="691.0" />
+      <point x="844.875" y="691.0" />
+      <point x="844.875" y="513.0" />
+      <point x="205.33299180327873" y="513.0" />
+      <point x="0.0" y="95.5" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="passProperties.Seasons" relationship="DEPENDENCY">
+      <point x="78.75" y="-84.0" />
+      <point x="981.1014344262296" y="701.0" />
+      <point x="1064.3514344262296" y="701.0" />
+      <point x="1064.3514344262296" y="691.0" />
+      <point x="1043.9969262295083" y="691.0" />
+      <point x="1043.9969262295083" y="473.0" />
+      <point x="1038.7469262295083" y="473.0" />
+      <point x="1038.7469262295083" y="453.0" />
+      <point x="1044.1014344262296" y="453.0" />
+      <point x="43.75" y="95.0" />
+    </edge>
+    <edge source="Main" target="skiPasses.PassSystem" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="823.6014344262296" y="1078.0" />
+      <point x="-78.75" y="84.0" />
+    </edge>
+    <edge source="turnstile.Turnstile" target="skiPasses.PassSystem" relationship="DEPENDENCY">
+      <point x="-50.75" y="-51.0" />
+      <point x="1339.3514344262296" y="933.0" />
+      <point x="1400.2295081967213" y="933.0" />
+      <point x="1400.2295081967213" y="923.0" />
+      <point x="823.6014344262296" y="923.0" />
+      <point x="-78.75" y="84.0" />
+    </edge>
+    <edge source="skiPasses.LiftsSkiPass" target="passProperties.DayTypes" relationship="DEPENDENCY">
+      <point x="-56.25" y="-39.5" />
+      <point x="452.62500000000006" y="523.0" />
+      <point x="613.3514344262296" y="523.0" />
+      <point x="613.3514344262296" y="453.0" />
+      <point x="557.3514344262296" y="453.0" />
+      <point x="557.3514344262296" y="187.0" />
+      <point x="795.25" y="187.0" />
+      <point x="-45.75" y="73.0" />
+    </edge>
+    <edge source="Main" target="skiPasses.DaysSkiPass" relationship="DEPENDENCY">
+      <point x="-37.25" y="-39.5" />
+      <point x="738.5829918032787" y="1088.0" />
+      <point x="181.22643442622956" y="1088.0" />
+      <point x="181.22643442622956" y="1078.0" />
+      <point x="247.3719262295083" y="1078.0" />
+      <point x="247.3719262295083" y="701.0" />
+      <point x="203.12500000000006" y="701.0" />
+      <point x="-57.75" y="51.0" />
+    </edge>
+    <edge source="skiPasses.PassSystem" target="passProperties.LiftsNum" relationship="DEPENDENCY">
+      <point x="78.75" y="-84.0" />
+      <point x="981.1014344262296" y="701.0" />
+      <point x="1064.3514344262296" y="701.0" />
+      <point x="1064.3514344262296" y="691.0" />
+      <point x="921.625" y="691.0" />
+      <point x="921.625" y="503.0" />
+      <point x="658.8514344262296" y="503.0" />
+      <point x="0.0" y="106.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5896414342629482" showDependencies="true" x="1836.9493243243242" y="594.8479729729729" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
